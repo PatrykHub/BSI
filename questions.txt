@@ -1769,58 +1769,58 @@ e) ssh
 f) rsh -true
 
 283. Mechanizm sudo umozliwia
-a) wskazanie konta, z którego mozna wykonac polecenie bez pytania o haslo uzytkownika przypisanego do pliku programu tego polecenia, pod warunkiem przynaleznosci do grupy przypisanego do tego pliku
-b) okreslenie jaki uzytkownik moze wykonywac konkretne programy z innymi uprawnieniami
+a) wskazanie konta, z którego mozna wykonac polecenie bez pytania o haslo uzytkownika przypisanego do pliku programu tego polecenia, pod warunkiem przynaleznosci do grupy przypisanego do tego pliku -true
+b) okreslenie jaki uzytkownik moze wykonywac konkretne programy z innymi uprawnieniami -true
 c) wykonywanie tylko programów nalezacych do uzytkownika root z uprawnieniami biezacego uzytkownika
 d) uruchamianie innych aplikacji wylacznie z uprawnieniami administratora
 284. Mechanizmem PAM mozna skonfigurowac
 a) ograniczenia czasowe dostepu do systemu operacyjnego
 b) ograniczenie maksymalnego ilosci procesów jakie moze uruchomic uzytkownik[88]
-c) sposób uwierzytelniania aplikacji - slajd 745
+c) sposób uwierzytelniania aplikacji - slajd 745 -true
 d) procedure zmiany danych uwierzytelniajacych
 
 285. Preshared key to
-a) (wstepny) klucz symetryczny
-b) mechanizm pozwalajacy uwierzytelniac i szyfrowac za pomoca jednego klucza
+a) (wstepny) klucz symetryczny -true
+b) mechanizm pozwalajacy uwierzytelniac i szyfrowac za pomoca jednego klucza -true
 c) silny mechanizm uwierzytelniania wykorzystujacy generowany losowo po obu stronach klucz
 d) silny mechanizm szyfrowania wykorzystujacy certyfikaty SSL do generacji losowego klucza sesyjnego
 286. Mechanizm User Account Control (UAC) systemu Windows:
 a) blokuje konto po zdefiniowanej wczesniej ilosci nieudanych prób logowania
 b) wprowadza dodatkowa forme ochrony konta administracyjnego m.in. przed koniami trojanskimi i zlosliwym oprogramowaniem
-c) pozwala administratorowi chwilowo skorzystac z pelnego tokenu administracyjnego
-d) wirtualizuje dostep do newralgicznych komponentów systemu plików
+c) pozwala administratorowi chwilowo skorzystac z pelnego tokenu administracyjnego -true
+d) wirtualizuje dostep do newralgicznych komponentów systemu plików -true
 287. Klucz szyfrowania, którym zaszyfrowana zostala tresc pliku (standardowym mechanizmem EFS z systemu NTFS)
 a) znajduje sie w certyfikacie wlasciciela pliku
 b) znajduje sie w certyfikacie kazdego agenta DRA w systemie operacyjnym
 c) jest zapisany wewnatrz zaszyfrowanego pliku
 d) znajduje sie w certyfikacie administratora systemu operacyjnego
-e) jest przechowywany wraz z zaszyfrowanym plikiem
+e) jest przechowywany wraz z zaszyfrowanym plikiem -true
 288. Skuteczna weryfikacja w systemie PGP podpisanego cyfrowo listu przeslanego od uzytkownika A do uzytkownika B wymaga:
 a) wykonania podpisu kluczem prywatnym B
-b) wykonania podpisu kluczem prywatnym A
+b) wykonania podpisu kluczem prywatnym A -true
 c) wykonania podpisu kluczem publicznym B
 d) wykonania podpisu kluczem publicznym A
 289. xinetd to:
 a) modul jadra Linux, który implementuje kontekstowa filtracje pakietów
 b) prosty mechanizm szyfrowania uzywany przez zapore sieciowa w systemie Linux
-c) element systemu operacyjnego Linux, odpowiedzialny za dynamiczne uruchamianie uslug sieciowych
+c) element systemu operacyjnego Linux, odpowiedzialny za dynamiczne uruchamianie uslug sieciowych -true
 d) modul jadra Linux, który limity zasobowe w stosie TCP/IP
 290. Przy kopiowaniu zaszyfrowanego pliku z NTFS na partycje FAT:
 a) plik bedzie mozliwy do odczytu tylko na systemie, na którym zostal zaszyfrowany
-b) plik zostaje odszyfrowany
+b) plik zostaje odszyfrowany -true
 c) plik bedzie pózniej wymagal recznego odszyfrowania
 d) plik moze byc skopiowany tylko przez uzytkownika "Data Recovery Agent"
 291. Zaznacz poprawne warunki, których spelnienie w systemie plików NTFS pozwoli by uzytkownik U  nalezacy do grupy G mógl odczytac zawartosc pliku P w katalogu K:
 a) U lub G dziedzicza dostep do odczytu z katalogu K [89]
 b) U jawnie odebrano prawo odczytu P, ale U dziedziczy to prawo z katalogu K
 c) U jawnie odebrano prawo odczytu P, ale G dziedziczy to prawo z katalogu K
-d) U lub G maja jawnie nadane prawo odczytu pliku P
-e) tylko U ma jawnie nadany dostep do P i K, G nie nadano zadnych praw ani do K, ani do P
-f) tylko U dziedziczy dostep do P i K, G nie dziedziczy zadnych praw ani do K, ani do P
+d) U lub G maja jawnie nadane prawo odczytu pliku P -true
+e) tylko U ma jawnie nadany dostep do P i K, G nie nadano zadnych praw ani do K, ani do P -true
+f) tylko U dziedziczy dostep do P i K, G nie dziedziczy zadnych praw ani do K, ani do P -true
 292. Wskaz to z ustawien parametrów hasel (tylko jedno), które jest najkorzystniejsze dla bezpieczenstwa konta:
 a) okres waznosci hasla: nieskonczony
 b) maksymalna dlugosc: 14 znaków
-c) minimalna dlugosc: 10 znaków
+c) minimalna dlugosc: 10 znaków -true
 d) odwracalne szyfrowanie hasel: wlaczone
 293. getfacl --omit-header test
 				user::rwx
@@ -1837,48 +1837,48 @@ d) odwracalne szyfrowanie hasel: wlaczone
 				default:other::r-x
 Oznacza, ze:
 a) grupa "agents" moze modyfikowac zawartosc obiektu test
-b) wlasciciel moze tworzyc pliki w katalogu test
-c) uzytkownik "jbond" moze modyfikowac zawartosc obiektu test
-d) uzytkownik "jbond" moze przegladac liste plików w katalogu test
+b) wlasciciel moze tworzyc pliki w katalogu test -true
+c) uzytkownik "jbond" moze modyfikowac zawartosc obiektu test -true 
+d) uzytkownik "jbond" moze przegladac liste plików w katalogu test -true
 294. Stosowany w sieciach VPN preshared key to:
 a) klucz publiczny z predefiniowanego certyfikatu SSL sluzacy do generacji asymetrycznego klucza szyfrowania danych
-b) statycznie ustalony po obu stronach tunelu klucz symetryczny
+b) statycznie ustalony po obu stronach tunelu klucz symetryczny -true
 c) mechanizm uwierzytelniania wykorzystujacy generowane losowo po obu stronach wstepne klucze asymetryczne D-H
-d) mechanizm pozwalajacy uwierzytelniac strony tunelu
+d) mechanizm pozwalajacy uwierzytelniac strony tunelu -true
 295. Czego nie mozna ograniczyc za pomoca komendy ulimit (mechanizmu limitów zasobowych)?
 a) wielkosci pliku zrzutu pamieci
 b) ilosci otwartych deskryptorów
 c) ilosci tworzonych procesów
 d) sumy zajmowanej przestrzeni dyskowej przez pliki
-e) ilosci zalogowanych równoczesnie uzytkowników
+e) ilosci zalogowanych równoczesnie uzytkowników -true
 f) ilosci wykorzystanej pamieci operacyjnej przez proces
 296. Asocjacja bezpieczenstwa (ang. Security Association) IPsec w systemie Windows:
 a) to protokól zestawiania tunelu IPsec, w którym negocjowane sa parametry tunelu
 b) moze byc monitorowana przez systemowa zapore sieciowa
-c) obejmuje zestaw parametrów niezbednych do komunikacji w tunelu IPsec
+c) obejmuje zestaw parametrów niezbednych do komunikacji w tunelu IPsec -true
 d) to polityka IPsec okreslajaca filtry pakietów poddawanych tunelowaniu
 297. Mechanizm sudo:
 a) zawsze wymaga podania hasla docelowego uzytkownika
-b) mozna tak skonfigurowac by wymagal podania hasla biezacego uzytkownika
-c) mozna tak skonfigurowac by nie wymagal podania hasla docelowego uzytkownika
+b) mozna tak skonfigurowac by wymagal podania hasla biezacego uzytkownika -true
+c) mozna tak skonfigurowac by nie wymagal podania hasla docelowego uzytkownika -true
 d) nigdy nie wymaga podania hasla docelowego uzytkownika
 298. Szyfrowanie asymetryczne w PGP:
 a) jest wykorzystywane do szyfrowania tresci wiadomosci
-b) jest wykorzystywane przy podpisywaniu wiadomosci
-c) to uzywanie dwóch matematycznie zaleznych kluczy
+b) jest wykorzystywane przy podpisywaniu wiadomosci -true
+c) to uzywanie dwóch matematycznie zaleznych kluczy -true
 d) wymaga uzycia klucza publicznego nadawcy do rozszyfrowania listu
-e) wymaga uzycia klucza publicznego odbiorcy do zaszyfrowania listu
+e) wymaga uzycia klucza publicznego odbiorcy do zaszyfrowania listu -true
 299. Wskaz mozliwe sposoby uwierzytelniania tunelu IPsec w systemie Windows:
-a) certyfikat X.509
-b) haslo
-c) klucz RSA[90]
+a) certyfikat X.509 -true
+b) haslo -true
+c) klucz RSA[90] -true
 300. Jak czesto sudo bedzie pytac uzytkownika o haslo?
-a) co okreslony czas od ostatniego uzycia[91]
+a) co okreslony czas od ostatniego uzycia[91] -true
 b) nigdy, jesli sudo wykorzystuje SSO
 c) tylko przy pierwszym uzyciu po zalogowaniu[92]
 d) za kazdym razem, kiedy zostanie wywolane
 301. Mechanizm POSIX ACL umozliwia:
-a) nadawanie praw do zasobów plikowych poszczególnych uzytkownikom i grupom
+a) nadawanie praw do zasobów plikowych poszczególnych uzytkownikom i grupom -true
 b) odtwarzanie skasowanych plików pod warunkiem posiadania praca C
 c) szyfrowania plików metoda symetryczna
 d) automatyczne sumowanie uprawnien uzytkownika ze wszystkich grup, do których nalezy
@@ -1886,133 +1886,133 @@ d) automatyczne sumowanie uprawnien uzytkownika ze wszystkich grup, do których 
 302. Historia hasel jest przechowywana przez system operacyjny:
 a) aby wykluczyc ponowne uzycie tego samego hasla jednorazowego
 b) aby wykluczyc ustawienie nowego hasla identycznego z jakimkolwiek wczesniej wybranych przez tego samego uzytkownika od poczatku
-c) w polaczeniu z minimalnym okresem waznosci hasla, aby wykluczyc zbyt czeste wybieranie przez uzytkownika tego samego nowego hasla
+c) w polaczeniu z minimalnym okresem waznosci hasla, aby wykluczyc zbyt czeste wybieranie przez uzytkownika tego samego nowego hasla -true
 d) aby umozliwic tzw. przypomnienie hasel uzytkowników (szczególnie uzyteczne w przypadku aplikacji nieobslugujacych funkcji jednokierunkowych)
 303. Pojedyncza regula zapory sieciowej Windows:
 a) moze dotyczyc jednoczesnie ruchu przychodzacego i wychodzacego
-b) moze dotyczyc wszystkich 3 profili sieciowych jednoczesnie (domain, private and public)
-c) moze byc ustawiona z uzyciem polecenia netsh
-d) moze dotyczyc tylko wskazanego programu
+b) moze dotyczyc wszystkich 3 profili sieciowych jednoczesnie (domain, private and public) -true
+c) moze byc ustawiona z uzyciem polecenia netsh -true
+d) moze dotyczyc tylko wskazanego programu -true
 
 304. Grupa uzytkowników w systemie MS Windows o nazwie Uzytkownicy uwierzytelnieni:[93]
 a) jest identyczna z grupa Wszyscy
-b) jest podzbiorem grupy Wszyscy
+b) jest podzbiorem grupy Wszyscy -true
 c) obejmuje wszystkich uzytkowników lokalnych[94]
-d) nie obejmuje konta Gosc
+d) nie obejmuje konta Gosc -true
 305. Mechanizm mandatory Integrity Control (MIC) system Windows:
 a) przypisuje procesowi jeden z 5 poziomów uprawnien uwzglednianych dodatkowo w kontroli dostepu[95][96][97]
 b) pozwala ograniczyc dostep do odczytu dla wybranych plików
-c) pozwala ograniczyc dostep do zapisu w systemie plików
+c) pozwala ograniczyc dostep do zapisu w systemie plików -true
 d) pozwala ograniczyc swobode komunikacji miedzy procesami
 
 306. Wskaz pliki zaangazowane w konfiguracje TCP wrappera w systemie Unix:
-a) /etc/hosts.allow
+a) /etc/hosts.allow -true
 b) /etc/hosts
-c) /etc/hosts.deny
+c) /etc/hosts.deny -true
 d) /etc/hosts.equiv
 307. Wybierz prawdziwa kolejnosc operacji NAT:
 a) PREROUTING(mangle) PREROUTING(nat) FILTERING POSTROUTING(nat) POSTROUTING(mangle)
 b) PREROUTING(nat) PREROUTING(mangle) FILTERING POSTROUTING(nat) POSTROUTING(mangle)
 c) PREROUTING(nat) PREROUTING(mangle) FILTERING POSTROUTING(mangle) POSTROUTING(nat)
-d) PREROUTING(mangle) PREROUTING(nat) FILTERING POSTROUTING(mangle) POSTROUTING(nat)[98]
+d) PREROUTING(mangle) PREROUTING(nat) FILTERING POSTROUTING(mangle) POSTROUTING(nat)[98] -true
 308. Wskaz róznice miedzy dwoma komendami sudo su oraz su:
 a) jedyna róznica jest to, ze aby wykonac polecenie sudo su uzytkownik musi nalezec do grupy whels
-b) sudo su moze wymagac podania hasla biezacego uzytkownika, su natomiast root'a[99]
+b) sudo su moze wymagac podania hasla biezacego uzytkownika, su natomiast root'a[99] -true
 c) su bedzie wymagac podania hasla biezacego uzytkownika, sudo su natomiast root'a  
 d) nie ma zadnej róznicy, sudo su jest aliasem na su 
 309. Które konfiguracje tuneli obsluguje system OpenVPN:
 a) 1 do wielu przy uwierzytelnianiu poprzez wspólny klucz
-b) 1 do 1 przy uwierzytelnianiu poprzez certyfikaty X.509
-c) 1 do 1 przy uwierzytelnianiu poprzez wspólny klucz[100]
+b) 1 do 1 przy uwierzytelnianiu poprzez certyfikaty X.509 -true
+c) 1 do 1 przy uwierzytelnianiu poprzez wspólny klucz[100] -true
 d) 1 do wielu przy uwierzytelnianiu poprzez certyfikaty X.509
 310. Wskaz elementy konfiguracji klienta ssh niezbedne do uwierzytelnienia bez koniecznosci interakcji z uzytkownikiem:
-a) klucz publiczny uzytkownika musi zostac dopisany do pliku authorized_keys w wezle docelowym
+a) klucz publiczny uzytkownika musi zostac dopisany do pliku authorized_keys w wezle docelowym -true
 b) klucz prywatny uzytkownika musi zostac dopisany do pliku authorized_keys w wezle docelowym
-c) w lokalnym pliku known_hosts zapisany musi byc klucz publiczny docelowego wezla
+c) w lokalnym pliku known_hosts zapisany musi byc klucz publiczny docelowego wezla -true
 d) w lokalnym katalogu .ssh znajdowac sie musi klucz prywatny docelowego wezla
 
 311. Definicji zaufania (single-sign-on) dla uslug r* mozna dokonywac w:
-a) ~/.rhosts
+a) ~/.rhosts -true
 b) /etc/rhosts
 c) ~/.sso_hosts
 d) /etc/hosts.allow
-e) /etc/hosts.equiv
+e) /etc/hosts.equiv -true
 f) /etc/hosts
 
 312. W jaki sposób przebiega uwierzytelnianie w usludze rlogin
 a) uwierzytelnienie obu stron polaczenia nastepuje mechanizmem Challenge-Response
 b) zawsze wymagane jest uwierzytelnianie bez hasla
-c) mozliwe jest wykorzystanie SSO by nie podawac hasla
+c) mozliwe jest wykorzystanie SSO by nie podawac hasla -true
 d) zawsze wymagane jest haslo
 313. Udzial C$ jest to:
 a) udzial domyslny kontrolera domeny sluzacy do obslugi logowania w sieci
-b) udzial sluzacy do dostepu do dysku C w celach zdalnej administracji
+b) udzial sluzacy do dostepu do dysku C w celach zdalnej administracji -true
 c) udzial komunikacji miedzyprocesowej w systemie operacyjnym
 d) udzial do komunikacji IPsec
 314. Jaka jest kolejnosc sprawdzania regul w plikach hosts.deny hosts.allow
 a) jesli znajdzie sie najpierw dopasowanie w deny to allow w ogóle nie jest sprawdzane
 b) najpierw deny do pierwszego dopasowania
-c) najpierw allow do pierwszego dopasowania
-d) jesli znajdzie sie najpierw dopasowanie w allow to deny w ogóle nie jest sprawdzane
+c) najpierw allow do pierwszego dopasowania -true
+d) jesli znajdzie sie najpierw dopasowanie w allow to deny w ogóle nie jest sprawdzane -true
 
 
 315. Co mozna ustawic w zasadach kont w MS Windows
 a) minimalna dlugosc nazwy uzytkownika
 b) maksymalna dlugosc nazwy uzytkownika
-c) minimalna dlugosc hasla
+c) minimalna dlugosc hasla -true
 d) maksymalna dlugosc hasla
-e) zlozonosc hasla
+e) zlozonosc hasla -true
 f) szyfrowanie AES
-g) Minimalny czas waznosci hasla
+g) Minimalny czas waznosci hasla -true
 316. Czy maska uprawnien POSIX ACL jest definiowana dla kazdego uzytkownika osobno?
-a) tak, z priorytetem maski domyslnej (logiczny AND)
+a) tak, z priorytetem maski domyslnej (logiczny AND) -true
 b) nie, maske mozna zdefiniowac tylko dla grup uzytkowników
 c) tak, jesli jawnie wskazemy nazwe uzytkownika
 d) nie, istnieje tylko jedna obowiazujaca maska
 317. Przeslanie i zweryfikowanie podpisanego cyfrowo listu w standardzie S/MIME od uzytkownika A do uzytkownika B wymaga:
 a) pozyskania przez uzytkownika B tajnego klucza symetrycznego od A
-b) pozyskania przez B certyfikatu klucza publicznego A
+b) pozyskania przez B certyfikatu klucza publicznego A -true
 c) pozyskania certyfikatów kluczy publicznych wzajemnie przez obu uzytkowników
-d) pozyskania przez A certyfikatu klucza publicznego B[101]
+d) pozyskania przez A certyfikatu klucza publicznego B[101] -true
 318. Szyfrowanie symetryczne plików mechanizmem EFS systemu NTFS
 a) moze byc realizowane po zainstalowaniu dodatkowego oprogramowania DRA
-b) moze byc realizowane pod warunkiem posiadania przez uzytkownika certyfikatu klucza publicznego
+b) moze byc realizowane pod warunkiem posiadania przez uzytkownika certyfikatu klucza publicznego -true
 c) szyfruje pliki uzytkownika jego kluczem prywatnym
 d) nie jest realizowane przez system operacyjny starszy niz Windows 10
 
 319. Mechanizm impersonation systemu Windows:
-a) jest wykorzystywany przez polecenie runas
+a) jest wykorzystywany przez polecenie runas -true
 b) pozwala zdefiniowac dla uzytkownika inna nazwe wyswietlana (np. imie i nazwisko) niz nazwe konta
 c) definiuje 5 dodatkowych poziomów kontroli dostepu do danych i procesów
-d) pozwala procesowi uzyc chwilowo innego niz biezacy tokenu zabezpieczen
+d) pozwala procesowi uzyc chwilowo innego niz biezacy tokenu zabezpieczen -true
 320. Mozliwosci uwierzytelniania sie przy uzyciu SSH2 to:
 a) mechanizm zaufania (.rhosts)[102]
 b) symetryczne klucze uzytkownika
-c) haslo uzytkownika 
-d) asymetryczne klucze uzytkownika
+c) haslo uzytkownika -true
+d) asymetryczne klucze uzytkownika -true
 321. W jakim celu mozna weksportowac certyfikat do formatu PKCS #12:
 a) W celu wyekstraktowania klucza do szyfrowania wiadomosci
-b) W celu wyekstraktowania klucza aby przekazac go drugiej stronie
-c) W celu stworzenia kopii zapasowej certyfikatu
-d) zaimportowac w kliencie pocztowym
+b) W celu wyekstraktowania klucza aby przekazac go drugiej stronie -true
+c) W celu stworzenia kopii zapasowej certyfikatu -true
+d) zaimportowac w kliencie pocztowym -true
 322. Który mechanizm pozwala na wirtualizacje jadra systemu:
-a) VBS
-b) ARM TrustZone
-c) TEE 
+a) VBS -true
+b) ARM TrustZone -true
+c) TEE -true
 d) SSL
 323. Aby zweryfikowac podpis cyfrowy w systeme PGP wiadomosci od nadawcy A do odbiorcy B potrzeba:
 a) klucz prywatny nadawcy A, przeciez B nie posiada klucza prywatnego A, a A podpisuje swoim prywatnym
-b) klucz publiczny nadawcy A
+b) klucz publiczny nadawcy A -true
 c) klucz prywatny odbiorcy B
 d) klucz publiczny odbiorcy B
 324. Kiedy w Windowsie nastepuje zerowanie licznika prób wpisania hasla:
-a) Po pomyslnym zalogowaniu
-b) Po uplywie okreslonego czasu
-c) Administrator moze recznie wyzerowac
+a) Po pomyslnym zalogowaniu -true
+b) Po uplywie okreslonego czasu -true
+c) Administrator moze recznie wyzerowac -true
 d) nie pamietam, ale nie powinno byc zaznaczone
 325. Czy iptables umozliwia okreslenie domyslnej polityki w lancuchu?
 a) Tylko w lancuchach tablicy filter
-b) Tylko w predefiniowanych lancuchach
+b) Tylko w predefiniowanych lancuchach -true
 c) Tak, w kazdym lancuchu
 d) tylko w nowo utworzonych lancuchach
 e) tak
@@ -2021,96 +2021,96 @@ g) Nie
 326. W metodzie uzgadniania klucza Diffiego-Hellmana system kompromituje (narusza bezpieczenstwo)
 a) przechwycenia jednego z wymienianych kluczy
 b) przechwycenia obu wymienianych kluczy
-c) podstawienie falszywego klucza w miejsce kazdego z wymienianych[103]
+c) podstawienie falszywego klucza w miejsce kazdego z wymienianych[103] -true
 d) podstawienie falszywego klucza w miejsce dowolnego z wymienianych
 327. Klasa B1 wg TCSEC ("Orange Book") lub rownowazna jej klasa EAL4 wg Common Criteria wymaga m. in.
-a) ochrony systemowych obszarow pamieci
-b) uwierzytelniania uzytkownikow
-c) scislej kontroli dostepu do danych (MAC)
+a) ochrony systemowych obszarow pamieci -true
+b) uwierzytelniania uzytkownikow -true
+c) scislej kontroli dostepu do danych (MAC) -true
 d) szyfrowania plikow
 328. Czy certyfikaty SSL dla obu stron polaczenia vpn nawiazanego przy pomocy programu OpenVPN musza by podpisane przez ta sam zaufana strone trzecia?
 a) nie, poniewaz nie ma takiej opcji w OpenVPN
-b) nie, poniewaz nie ma znaczenia czy to jest to samo CA, wazne aby zaufanie strony trzeciej bylo ogolnie znane CA, np. Thawte, VeriSign, Unizeto
+b) nie, poniewaz nie ma znaczenia czy to jest to samo CA, wazne aby zaufanie strony trzeciej bylo ogolnie znane CA, np. Thawte, VeriSign, Unizeto -true
 c) nie trzeba podawac parametru wskazujacego na CA, jest to opcjonalne
 d) tak
 329. Które funkcje i parametry konfiguracyjne PHP moga byc wykorzystane do ochrony przed atakami typu command injection?
-a) magic_quotes_gpc
-b) addslashes()
-c) mysql_escape_string()
-d) strip_tags()
+a) magic_quotes_gpc -true
+b) addslashes() -true
+c) mysql_escape_string() -true
+d) strip_tags() -true
 330. Wskaz prawidlowe stwierdzenia dotyczace metod uwierzytelniania systemów operacyjnych MS Windows w srodowisku sieciowym:
-a) Kerberos jest bezpieczniejszy niz LM i NTLM
+a) Kerberos jest bezpieczniejszy niz LM i NTLM -true
 b) LM jest bezpieczniejszy niz NTLM
 c) Kerberos jest bezpieczniejszy niz NTLM, ale jest dostepny tylko w srodowisku domenowym
-d) NTLM jest bezpieczniejszy niz LM
+d) NTLM jest bezpieczniejszy niz LM -true
 331. Czy program inetd[104] to:
-a) jest waznym elementem systemu operacyjnego Linux, odpowiedzialny za uruchamianie innych programów
+a) jest waznym elementem systemu operacyjnego Linux, odpowiedzialny za uruchamianie innych programów -true
 b) krytyczny program w systemie operacyjnym Linux, który zawsze musi byc uruchomiony
 c) krytyczny program w systemie operacyjnym Linux, który zawsze musi byc uruchomiony, jest rodzicem dla wszystkich nowo powstalych procesów
 d) bardzo wazny komponent systemu Linux, bez którego system operacyjny nie bedzie dzialal prawidlowo z uwagi na niemoznosc uruchamiania dodatkowych programow
 332. Wskaz cechy mechanizmu SYN cookies:
 a) pozwala przegladarce na bezpieczna aktualizacje ciasteczek
 b) minimalizuje ilosc informacji potrzebnych przegladarce do uwierzytelniania zdalnego dostepu
-c) identyfikuje polaczenie wartoscia wpisywana do pola ACK
-d) minimalizuje wielkosc zasobów przydzielonych przy odbiorze zadania nawiazania polaczenia
+c) identyfikuje polaczenie wartoscia wpisywana do pola ACK -true
+d) minimalizuje wielkosc zasobów przydzielonych przy odbiorze zadania nawiazania polaczenia -true
 333. Jesli ls -l plik.txt wyglada nastepujaco -rwxr-xr-x+ 1 user group 1000 2005-01-10 09:00 plik.txt to chmod 715 plik.txt" spowoduje:
 a) zwiekszenie uprawnien wpisom ACL'owym
-b) zmiane uprawnien grupie "group" dla tego pliku
+b) zmiane uprawnien grupie "group" dla tego pliku -true
 c) zmniejszenie uprawnien wpisom ACL'owym
 d) rozszerzenie uprawnien dla innych
 334. Zapora sieciowa wbudowana w Ms Win XP sp2:
 a) jest typu stateless
 b) jest jedyna mozliwa do zastosowania zapora sieciowa w systemie
 c) pozwala powiadamiac uzytkownika droga mailowa o zagrozeniach
-d) jest zapora typu stateful
+d) jest zapora typu stateful -true
 
 335. W jaki sposob mozna utworzyc wiele polaczen z danego hosta za pomoca programu OpenVPN?
-a) nalezy powtorzyc wpisanie opcji: remote tyle razy ile polaczen VPN mamy utworzyc
+a) nalezy powtorzyc wpisanie opcji: remote tyle razy ile polaczen VPN mamy utworzyc -true
 b) nalezy uruchomic program OpenVPN z przelacznikiem: --force-multi-instance, wymuszajac w ten sposob uruchomienie wielu procesow programu OpenVPN do obslugi wielu jednoczesnych polaczen vpn
 c) nie ma takiej mozliwosci
 d) nalezy uruchomic program OpenVPN z wieloma plikami konfiguracyjnymi, kazdy plik definiuje jedno polaczenie
 e) nalezy wykorzystac opcje --mode server ale tylko dla polaczen z zastosowaniem certyfikatow SSL
-f) nalezy uruchomic kolejne instancje programu OpenVPN wraz z osobnymi plikami konfiguracyjnymi
+f) nalezy uruchomic kolejne instancje programu OpenVPN wraz z osobnymi plikami konfiguracyjnymi -true
 336. Ktore polecenie bedzie poprawne, dla ustalenia DNAT (wybierz 2 odpowiedzi)?
 a) iptables -t nat -A FORWARD -d 150.254.17.3 -i eth- -j DNAT --to 192.168.1.1
 b) iptables -t nat -A PREROUTING -d 150.254.17.3 -i eth0 -j NAT --to 192.168.1.1
-c) iptables -t nat -A PREROUTING -i eth0 -j SAME --to 150.254.17.2
-d) iptables -t nat -A PREROUTING -d 150.254.17.3 -i eth0 -j DNAT --to 192.168.1.1
+c) iptables -t nat -A PREROUTING -i eth0 -j SAME --to 150.254.17.2 -true
+d) iptables -t nat -A PREROUTING -d 150.254.17.3 -i eth0 -j DNAT --to 192.168.1.1 -true
 e) iptables -t nat -A POSTROUTING -d 150.254.17.3 -i eth0 -j DNAT --to 192.168.1.1
 f) iptables -t nat -A POSTROUTING -o eth0 -j SAME --to 150.254.17.2
 337. Ponizsza regula zostala wpisana na komputerze pelniacym role routera: iptables -t filter -A INPUT -m state --state NEW -j DROP
-a) odrzuca nowe polaczenia do tego komputera
+a) odrzuca nowe polaczenia do tego komputera -true
 b) odrzuca nowe polaczenia inicjalizowane przez ten komputer
 c) odrzuca nowe polaczenia przechodzace przez ten komputer
 d) DROP znaczy nie przeszukuj dalej zapory, przepusc pakiet
 338. Narzedzie OpenVPN
 a) dziala tylko na protokole TCP
 b) wykorzystuje mechanizm pre-shared key do losowego generowania kluczy
-c) nie ma wyroznionego programu serwerowego i klienckiego
-d) jest przykladem SSL-VPN
+c) nie ma wyroznionego programu serwerowego i klienckiego -true
+d) jest przykladem SSL-VPN -true
 e) wykorzystuje certyfikaty MD5 i funkcje skrotu SHA-1 do uwierzytelniania stron i szyfrowania ruchu sieciowego
 f) wykorzystuje mechanizm SSL-VPN do laczenia sie z serwerami wspierajacymi protokol https np. Apache
 339. Narzedzie Vtun to:
 a) samodzielny pakiet niskopoziomowego(dzialajacego na poziomie jadra ) oprogramowania do tworzenia podsieci VPN
-b) proste narzedzie do tworzenia polaczen VPN korzystajace tylko z jednego pliku konfiguracyjnego i zestawu narzedzi obecnych w systemie
+b) proste narzedzie do tworzenia polaczen VPN korzystajace tylko z jednego pliku konfiguracyjnego i zestawu narzedzi obecnych w systemie -true
 c) narzedzie dzialajace na poziomie warstwy uzytkownika ( tzw. userland ) pozwalajace tworzyc tylko pojedyncze polaczenia VPN przy uzyciu prostego pliku konfiguracyjnego vtund.
 340. Program Vtun dziala w architekturze:
 a) punkt - punkt
-b) klient - serwer
-c) polaczenia peer-to-peer dla kazdego polaczenia
+b) klient - serwer -true
+c) polaczenia peer-to-peer dla kazdego polaczenia -true
 d) w zadnej z powyzszych poniewaz Vtun jest bardzo prosty i nie zawiera w sobie zadnej skomplikowanej architektury
 341.  Program Vtun dziala:
 a) na porcie domyslnym 1045 ale mozna to zmienic
 b) na porcie domyslnym 5000 i mozna to zmienic ale trzeba przekompilowac kod programu
-c) na domyslnym porcie 5000
+c) na domyslnym porcie 5000 -true
 d) na porcie domyslnym 1001 mozna to zmienic w pliku konfiguracyjnym vtund.conf
 e) na porcie domyslnym 1045 ale mozna to bez problemu zmienic w pliku konfiguracyjnym vtund.conf
 342. Polaczenie w Vtun przebiega nastepujaco:
 a) w momencie tworzenia polaczenia wykonywane sa odpowiednie podsekcje up w definicji danego polaczenia ktore ma zostac utworzone, w momencie zakonczenia polaczenia wykonywana jest podsekcja down w definicji polaczenia
 b) po nawiazaniu polaczenia obie strony uzgadniaja parametry polaczenia takie jak np. haslo i rodzaj transmisji danych, w momencie zakonczenia polaczenia nastepuje specjalna procedura rozpoczynana przez strone, ktora chce zakonczyc polaczenie
-c) w zaden z wymienionych, na poczatku sposobow, obie strony musza wymienic sie ustalonym haslem, potwierdzic jego prawdziwosc, wynegocjowac parametry transmisji i dopiero tworzone jest polaczenie do przesylania danych, zakonczenie rozpoczynane jest przez dowolna strone
+c) w zaden z wymienionych, na poczatku sposobow, obie strony musza wymienic sie ustalonym haslem, potwierdzic jego prawdziwosc, wynegocjowac parametry transmisji i dopiero tworzone jest polaczenie do przesylania danych, zakonczenie rozpoczynane jest przez dowolna strone -true
 343. Czy polecenie jest poprawne? iptables -t mangle -A PREROUTING -s localnet -d ! localnet -m ipp2p --dc -m comment --comment "zla regulka" -j TTL --ttl-set 1
-a) tak, ale system bedzie usuwal te pakiety
+a) tak, ale system bedzie usuwal te pakiety -true
 b) tak, lecz taka regula niczego nie zmieni, gdyz nie ma celu ACCEPT lub DROP
 c) nie, gdyz nie mozna uzywac wielu argumentow "-m"
 d) nie, gdyz cel TTL moze byc uzywany tylko w lancuchu POSTROUTING
@@ -2119,12 +2119,12 @@ a) zmiana routingu pakietow, aby z jednej sieci pakiety trafialy bezposrednio do
 b) wsparcie polaczen p2p, aby hosty mogly bezposrednio komunikowal sie
 c) obejscie problemow z polaczeniami z sieciami zlokalizowanymi za NAT
 d) mozliwosc zapewnienia bardziej niezawodnych, w sensie polaczeniowym, niz TCP polaczen miedzy hostami
-e) utworzenie sieci laczacej odseparowane, odlegle sieci lokalne
+e) utworzenie sieci laczacej odseparowane, odlegle sieci lokalne -true
 345. Opcja PARANOID w pliku hosts.deny
 a) blokuje zdalne zarzadzanie mechanizmem TCP wrappers, pozostawiajac dostep tylko z lokalnego hosta
 b) wymusza sprawdzanie segmentow TCP czy sa poprawne w stosunku do norm RFC
 c) pozwala ograniczyc ilosc pakietow/s przychodzacych do danej uslugi
-d) blokuje pakiety pochodzace od hosta, ktorego ip nie posiada nazwy domenowej
+d) blokuje pakiety pochodzace od hosta, ktorego ip nie posiada nazwy domenowej -true
 346. getfacl --omit-header acl-test5 user::r-x user:inf44444:r-- group::rw- group:student:r-x mask::rwx other::--x Oznacza:
 a) uzytkownik "inf44444" nie moze czytac pliku acl-test5
 b) wlasciciel ma prawo zmodyfikowac zawartosc katalogu acl-test5
@@ -2133,13 +2133,13 @@ d) maska blokuje wszystkie uprawnienia do pliku acl-test5
 e) grupa wlasciciela moze zmodyfikowac plik acl-test5
 f) grupa "student" moze zmodyfikowac plik acl-test5
 347. Zaleta single-sign-on jest:
-a) jednokrotne uwierzytelnianie
+a) jednokrotne uwierzytelnianie -true
 b) stosowanie funkcji skrotu w celu uwierzytelniania
 c) jednokrotne szyfrowanie
 d) jednokrotna autoryzacja
 348. $ssh host Enter passphrase for key '/home/junior/.ssh/id_dsa': Wpis passphrase to:
 a) Haslo, ktorym jest zaszyfrowany klucz publiczny
-b) haslo, ktorym jest zaszyfrowany klucz prywatny
+b) haslo, ktorym jest zaszyfrowany klucz prywatny -true
 c) klucz, ktorym bedzie szyfrowana transmisja
 d) haslo wymagane przez zdalny host, aby zostac zalogowanym
 349. getfacl --omit-header acl-test1 
@@ -2151,75 +2151,75 @@ group::r-
 other::--- 
 Oznacza, ze:
 a) wlasciciel moze wykonac plik
-b) grupa domyslna/wlasciciela moze odczytac plik
-c) uzytkownik "junior" moze wykonac plik
-d) wlasciciel moze modyfikowac plik
-e) grupa "student" moze wykonac plik
-f) inni moga zmodyfikowac plik
+b) grupa domyslna/wlasciciela moze odczytac plik -true
+c) uzytkownik "junior" moze wykonac plik -true
+d) wlasciciel moze modyfikowac plik -true
+e) grupa "student" moze wykonac plik -true
+f) inni moga zmodyfikowac plik 
 350. Jak zachowa sie system kontroli ACL standardu POSIX w przypadku uzytkownika U nalezacego do grupy G i wpisanego na liscie ACL obiektu p, jesli ani U ani G nie maja jawnie przydzielonego prawa r, ale kategoria "wszyscy uzytkownicy" (others) takie uprawnienie do obiektu posiada:
 a) prawo r do obiektu p zostanie efektywnie przyznane, o ile U jest wlascicielem p
-b) prawo r do obiektu p zostanie efektywnie przyznane bezwarunkowo
+b) prawo r do obiektu p zostanie efektywnie przyznane bezwarunkowo -true
 c) prawo r do obiektu p nie zostanie efektywnie przyznane
 d) prawo r do obiektu p nie zostanie efektywnie przyznane, ale U odziedziczy je w glab, jesli p jest katalogiem
 351. Szyfr, w ktorym poddawana szyfrowaniu zostaje tej samej wielkosci jednobajtowa porcja nieregularnie pojawiajacych sie danych, nazywamy:
-a) strumieniowym
+a) strumieniowym -true
 b) symetrycznym
 c) blokowym
 d) niesymetrycznym
 352. SUID to:
 a) uproszczona wersji limitow
-b) bit uprawnien
+b) bit uprawnien -true
 c) odpowiednik SGID dla katalogow
 d) rozszerzenie mechanizmu SUDO
 353. W jaki sposób administrator moze narzucic ograniczenia uzytkownikom (limity)?
-a) korzystajac z mechanizmu PAM
+a) korzystajac z mechanizmu PAM -true
 b) korzystajac z mechanizmu Kerberos
 c) wykorzystujac skrypt "hosts.equiv"
 d) wykorzystujac skrypty startowe systemu
 354. Problem przepelnienia bufora dotyczy potencjalnie aplikacji:
-a) napisanych w jezyku C
+a) napisanych w jezyku C -true
 b) napisanych w jezyku Java
-c) uruchamianych w systemie z rodziny Windows
-d) uruchamianych w systemie z rodziny Unix/Linux
+c) uruchamianych w systemie z rodziny Windows -true
+d) uruchamianych w systemie z rodziny Unix/Linux -true
 355. Czy istnieje mozliwosc zmiany portu docelowego i adresu docelowego na adres localhost i dowolny inny port?
-a) tak
-b) tylko, jesli okreslimy protokol oraz oryginalny port docelowy
+a) tak -true
+b) tylko, jesli okreslimy protokol oraz oryginalny port docelowy -true
 c) tylko poprzez dodatkowy modul
 d) nie
 356. W jaki sposob program OpenVPN bedzie wiedzial, gdzie znajduje sie drugi koniec tunelu VPN
 a) OpenVPN w sposob interaktywny poprosi uzytkownika o podanie adresu IP i numeru portu
-b) nalezy wpisac odpowiednia opcje w pliku konfiguracyjnym
+b) nalezy wpisac odpowiednia opcje w pliku konfiguracyjnym -true
 c) OpenVPN wysle zapytanie do najblizszego serwera VPN
 d) OpenVPN odczytuje zawartosc zdalnej tablicy routingu i pobiera ta informacje
 357. Dyrektywa "mask" w ACL okresla:
 a) mozna ja modyfikowac jedynie raz
-b) jest utozsamiana z uprawnieniami grupy
-c) ukrywanie nadanych uprawnien dodatkowych uzytkownikow
+b) jest utozsamiana z uprawnieniami grupy -true
+c) ukrywanie nadanych uprawnien dodatkowych uzytkownikow -true
 d) nie ma zadnego znaczenia
 358. Opcja spawn w pliku hosts.deny:
 a) pozwala tworzyc kolejne procesy TCP wrapper
 b) jest wykorzystywana tylko w pliku hosts.allow
-c) nie jest wykorzystywana
+c) nie jest wykorzystywana -true
 d) pozwala odeslac do nadawcy specjalnie spreparowana wiadomosc w odpowiedzi na zadanie
 359. Ktore polecenie bedzie poprawne, dla ustalenia SNAT
 a) iptables -t nat -A FORWARD -o eth0 -j SNAT --to 150.254.17.2
-b) iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 150.254.17.2
+b) iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 150.254.17.2 -true
 c) iptables -t nat -A PREROUTING -o eth0 -j SAME --to 150.254.17.2
 d) iptables -t nat -A POSTROUTING -o eth0 -j NAT --to 150.254.17.2
 e) iptables -t fnat -A PREROUTING -o eth0 -j SNAT --to 150.254.17.2
-f) iptables -t nat -A POSTROUTING -o eth0 -j SAME --to 150.254.17.2
+f) iptables -t nat -A POSTROUTING -o eth0 -j SAME --to 150.254.17.2 -true
 360. Czy iptables umozliwia ograniczenie dostepu do uslugi w jednym poleceniu?
-a) jesli okreslamy protokol
+a) jesli okreslamy protokol -true
 b) jesli nie okreslimy protokolu
 c) nie
-d) tak
+d) tak -true
 361. Oprogramowanie OpenVPN wykorzystuje tablice routingu w Linuxie:
 a) do sprawdzenia kosztu trasy prowadzacej do sieci po drugiej stronie polaczenia VPN
 b) aby dowiedziec sie jak nawiazac polaczenie z siecia po drugiej stronie tunelu VPN
-c) do przechowywania trasy do sieci dostepnej po drugiej stronie polaczenia VPN
+c) do przechowywania trasy do sieci dostepnej po drugiej stronie polaczenia VPN -true
 d) jako bufor przechowujacy nadchodzace informacje o zmianie trasy do odleglej sieci po drugiej stronie polaczenia VPN
 362. Nazwa konta "administrator" w systemie Ms Windows XP:
-a) mozna ja zmienic w kazdej chwili
+a) mozna ja zmienic w kazdej chwili -true
 b) jest definiowana przy instalacji systemu
 c) mozna ja zmienic tylko przy wykorzystaniu dodatkowego oprogramowania
 d) jest stala i nie moze byc zmieniona
@@ -2232,15 +2232,15 @@ c) zawsze root z uwagi na mozliwosc wykonania niektorych komend systemowych
 d) lokalny uzytkownik rshd
 e) zdalny uzytkownik rshd
 f) lokalny uzytkownik operator
-g) lokalny biezacy uzytkownik
+g) lokalny biezacy uzytkownik -true
 364. Do czego sluzy komenda rsh?
 a) pozwala wykonac zdalne polecenie na lokalnym hoscie
-b) pozwala wykonac polecenie na zdalnym hoscie
+b) pozwala wykonac polecenie na zdalnym hoscie -true
 c) pozwala nawiazac szyfrowane polaczenie ze zdalnym hostem
 365. user::rw- user:inf44444:r-x group::rwx group:student:rwx mask::rwx other::--- Oznacza:
 a) grupa "student" nie moze skasowac pliku
-b) uzytkownik "inf44444" moze wykonac plik
-c) grupa "student" moze skasowac katalog
+b) uzytkownik "inf44444" moze wykonac plik -true
+c) grupa "student" moze skasowac katalog -true
 d) wlasciciel moze wykonac plik
 e) maska blokuje wszystkie uprawnienia
 f) grupa domyslna (wlasciciela) nie moze zmodyfikowac pliku
@@ -2248,38 +2248,38 @@ f) grupa domyslna (wlasciciela) nie moze zmodyfikowac pliku
 a) nigdy
 b) tylko w starszych systemach (95, 98)
 c) zawsze
-d) jesli zostanie odpowiednio skonfigurowany
+d) jesli zostanie odpowiednio skonfigurowany -true
 367. Algorytmy SHA-256 i SHA-512 roznia sie wzajemnie:
 a) ograniczeniami eksportowymi
 b) dlugoscia kluczy
-c) wielkoscia wynikowego skrotu
+c) wielkoscia wynikowego skrotu -true
 d) zadne z powyzszych
 368. Ktorym z ponizszych terminow okresla sie ograniczone srodowisko wykonawcze aplikacji lub jej komponentu:
 a) komnata (room)
 b) komora (chamber)
 c) karcer (jailbox)
-d) piaskownica (sandbox)
+d) piaskownica (sandbox) -true
 369. Kontrola dostepu do zasobow jest zwiazana z zachowaniem wlasnosci:
-a) poufnosci i integralnosci
+a) poufnosci i integralnosci -true
 b) tylko poufnosci
 c) tylko integralnosci
 d) zadnej z powyzszych
 370. Czy RSBAC to:
 a) poprawnie skonfigurowana polityka bezpieczenstwa
 b) domyslne uprawnienia systemowe
-c) zestaw rozszerzajacy kontrole uprawnien
-d) zestaw lat na jadro systemu Linux
+c) zestaw rozszerzajacy kontrole uprawnien -true
+d) zestaw lat na jadro systemu Linux -true
 
 
 371. Pre-shared key to
 a) przestarzaly mechanizm sluzacy do logowania sie na zdalnego hosta bez podawania hasla
 b) cos takiego nie istnieje
-c) prosty mechanizm pozwalajacy szyfrowac i uwierzytelniac strony za pomoca jednego klucza
+c) prosty mechanizm pozwalajacy szyfrowac i uwierzytelniac strony za pomoca jednego klucza -true
 d) silny mechanizm uwierzytelniania wykorzystujacy generowany losowo po obu stronach klucz
 e) silny mechanizm szyfrowania wykorzystujacy certyfikaty SSL do generacji losowego klucza sesyjnego
-f) jest to przyklad kryptografii symetrycznej
+f) jest to przyklad kryptografii symetrycznej -true
 372. Co to jest challenge-response?
-a) mechanizm pozwalajacy uwierzytelniac sie bez potrzeby przesylania tajnego klucza
+a) mechanizm pozwalajacy uwierzytelniac sie bez potrzeby przesylania tajnego klucza -true
 b) przestarzala forma uwierzytelniania stosowana w ssh
 c) nie istnieje cos takiego
 d) mechanizm wykorzystywany w kryptografii dyskretnej
@@ -2287,20 +2287,20 @@ e) silny mechanizm szyfrowania wykorzystujacy kryptografie klucza publicznego
 373. Czy serwer KDC w systemie Kerberos przechowuje konta uzytkowników?
 a) tak
 b) tylko lokalne konta
-c) nie
+c) nie -true
 d) tylko konta administratorow
 374. W jaki sposob polaczenie nawiazane przez rsh jest zabezpieczone?
 a) kodowana komunikacja przy uzyciu funkcji XOR
 b) szyfrowana komunikacja po podaniu hasla i loginu
 c) komunikacja uwierzytelniana w kryptograficznie bezpieczny sposob
-d) komunikacja nie jest chroniona
+d) komunikacja nie jest chroniona -true
 375. W RSBAC, czy mozna zmienic uprawnienia do katalogu dla programu podczas jego dzialania?
-a) jesli program posiada taka mozliwosc (programista uwzglednil taka opcje)
+a) jesli program posiada taka mozliwosc (programista uwzglednil taka opcje) -true
 b) nie jest to okreslone
 c) istnieja takie mozliwosci
 d) nie
-376. Czy TCP wrapper to
-a) samodzielny program analizujacy tylko polaczenia tcp
+376. Czy TCP wrapper to 
+a) samodzielny program analizujacy tylko polaczenia tcp -true
 b) lata (ang. patch) rozszerzajaca funkcjonalnosc programu xinetd
 c) program analizujacy tylko przychodzace polaczenia tcp, ale dla numerow portow na ktorych uruchomione sa uslugi zarzadzane przez xinetd
 d) program w postaci prostego firewalla za pomoca ktorego mozna blokowac wychodzace polaczenia, odpowiednie reguly zapisywane sa w plikach /etc/hosts.allow i /etc/hosts.deny
@@ -2311,12 +2311,6 @@ e) dodatkowy podsystem sieciowy dla systemu operacyjnego Linux pozwalajacy na na
 a) wszyscy moga wykonac plik
 b) grupa "student" moze zmodyfikowac plik
 c) uzytkownik "inf44444" nie moze czytac plik
-d) uzytkownik "inf44444" moze czytac plik
-e) grupa wlasciciela moze zmodyfikowac plik
+d) uzytkownik "inf44444" moze czytac plik -true
+e) grupa wlasciciela moze zmodyfikowac plik -true
 f) maska blokuje wszystkie uprawnienia
-
-378. Jaka usluga jest szczegolnie trudna do filtrowania statycznego?
-a) ftp, poniewaz domyslnie serwery dzialaja w trybie pasywnym,
-b) ftp, poniewaz domyslnie serwery dzialaja w trybie aktywnym, nie jest trudne jezeli jest tryb pasywny
-c) rlogin, bo costam
-d) rlogin, bo drugie costam

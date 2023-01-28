@@ -21,8 +21,6 @@ def load_questions(filename: str):
     count = 1
     number = str(count) + ". "
     for line in file:
-        if count > 282:
-            break
         if line == "\n":
             continue
         if number in line:
@@ -91,6 +89,7 @@ def quiz():
         counter += 1
         truths = print_question(question)
         answer = [int(x) for x in input().split()]
+        answer.sort()
         if answer == truths:
             print("DOBRZE!")
             score += 1
