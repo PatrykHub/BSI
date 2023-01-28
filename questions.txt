@@ -1333,9 +1333,9 @@ e) ruch sieciowy transportowany, szyfrowany i uwierzytelniany
 
 211. Skrót VPN to:
 a) szczególny rodzaj sieci vlan ale rozciagajacej sie na kilka sieci lokalnych rozdzielonych Internetem
-b) wirtualna siec prywatna
+b) wirtualna siec prywatna -true
 c) dodatkowy model komunikacji wykorzystywany przez IPSec do zaufanych polaczen miedzy urzadzeniami sieciowymi takimi jak routery i switche, hosty
-d) szkieletowa siec w Internecie przeznaczona dla zastosowan korporacyjnych zapewniajaca wysoki stopien bezpieczenstwa np. w przypadku transakcji miedzy bankami albo filiami tego samego banku polaczonych Internetem -true
+d) szkieletowa siec w Internecie przeznaczona dla zastosowan korporacyjnych zapewniajaca wysoki stopien bezpieczenstwa np. w przypadku transakcji miedzy bankami albo filiami tego samego banku polaczonych Internetem
 e) eksperymentalny projekt bezpiecznej sieci nastepnej generacji w której bedzie mozna laczyc dowolna ilosc sieci lokalnych rozdzielonych Internetem w jedna calosc, dzieki czemu bedzie mozliwy swobodny dostep do zasobow jednej sieci lokalnej przez inna np. dostep do intranetu centrali firmy przez pracowników firmy z oddzialów firmy w innym miescie
 
 212. Translacja typu DNAT charakteryzuje sie:
