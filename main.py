@@ -63,7 +63,7 @@ def print_question(question: Question):
 
 
 def quiz():
-    questions = load_questions("./question.txt")
+    questions = load_questions("./questions.txt")
     random.shuffle(questions)
     score = 0.0
     mx = len(questions)
