@@ -97,10 +97,10 @@ def quiz():
             print("ŻLE! Poprawne odpowiedzi to: ", truths)
             score_in_question = 0.0
             for x in answer:
-                if answer in truths:
-                    score_in_question += 1/len(truths)
+                if x in truths:
+                    score_in_question += 1.0/len(truths)
                 else:
-                    score_in_question -= 1/len(truths)
+                    score_in_question -= 1.0/len(truths)
             if score_in_question > 0:
                 score += score_in_question
         if counter > length:
