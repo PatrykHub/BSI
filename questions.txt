@@ -1903,7 +1903,7 @@ d) aby umozliwic tzw. przypomnienie hasel uzytkowników (szczególnie uzyteczne 
 303. Pojedyncza regula zapory sieciowej Windows:
 a) moze dotyczyc jednoczesnie ruchu przychodzacego i wychodzacego
 b) moze dotyczyc wszystkich 3 profili sieciowych jednoczesnie (domain, private and public) -true
-c) moze byc ustawiona z uzyciem polecenia netsh -true
+c) moze byc ustawiona z uzyciem polecenia netsh
 d) moze dotyczyc tylko wskazanego programu -true
 
 304. Grupa uzytkowników w systemie MS Windows o nazwie Uzytkownicy uwierzytelnieni:
@@ -1993,7 +1993,7 @@ d) nie, istnieje tylko jedna obowiazujaca maska
 a) pozyskania przez uzytkownika B tajnego klucza symetrycznego od A
 b) pozyskania przez B certyfikatu klucza publicznego A -true
 c) pozyskania certyfikatów kluczy publicznych wzajemnie przez obu uzytkowników
-d) pozyskania przez A certyfikatu klucza publicznego B -true
+d) pozyskania przez A certyfikatu klucza publicznego B
 
 318. Szyfrowanie symetryczne plików mechanizmem EFS systemu NTFS
 a) moze byc realizowane po zainstalowaniu dodatkowego oprogramowania DRA
@@ -2172,10 +2172,10 @@ c) pozwala ograniczyc ilosc pakietow/s przychodzacych do danej uslugi
 d) blokuje pakiety pochodzace od hosta, ktorego ip nie posiada nazwy domenowej -true
 346. getfacl --omit-header acl-test5 user::r-x user:inf44444:r-- group::rw- group:student:r-x mask::rwx other::--x Oznacza:
 a) uzytkownik "inf44444" nie moze czytac pliku acl-test5
-b) wlasciciel ma prawo zmodyfikowac zawartosc katalogu acl-test5
-c) uzytkownik "inf44444" moze czytac plik acl-test5
+b) wlasciciel ma prawo zmodyfikowac zawartosc katalogu acl-test5 -true
+c) uzytkownik "inf44444" moze czytac plik acl-test5 -true
 d) maska blokuje wszystkie uprawnienia do pliku acl-test5
-e) grupa wlasciciela moze zmodyfikowac plik acl-test5
+e) grupa wlasciciela moze zmodyfikowac plik acl-test5 -true
 f) grupa "student" moze zmodyfikowac plik acl-test5
 347. Zaleta single-sign-on jest:
 a) jednokrotne uwierzytelnianie -true
