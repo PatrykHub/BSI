@@ -20,26 +20,35 @@ def load_questions(filename: str):
     file = open(filename, 'r', encoding='utf-8')
     count = 1
     number = str(count) + ". "
+    multilane = ""
     for line in file:
         if line == "\n":
             continue
         if number in line:
             if count != 1:
+                question.text += multilane
                 question.rearrange_answers()
                 questions.append(question)
-
+                multilane = ""
             question = Question(line.replace(number, ''))               
             count += 1
             number = str(count) + ". "
         else:
             answer = line
+            check = False
             for prefix in ALPHABET:
-                answer = answer.replace(prefix, '')
-            
-            if TRUTH in answer:
-                question.add_answer(answer.replace(TRUTH, ''), True)
+                if prefix in answer:
+                    answer = answer.replace(prefix, '')
+                    answer = answer.replace('\n', '')
+                    check = True
+            if not check:
+                multilane += answer + " "
             else:
-                question.add_answer(answer, False)
+                if TRUTH in answer:
+                    question.add_answer(answer.replace(TRUTH, ''), True)
+                else:
+                    question.add_answer(answer, False)
+    question.text += multilane
     question.rearrange_answers()
     questions.append(question)
     file.close()
