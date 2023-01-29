@@ -1,7 +1,10 @@
 import random
+import time
 
-ALPHABET = ["a) ", "b) ","c) ","d) ","e) ","f) ","g) ","h) ","i) ","j) ","k) ","l) ",]
+ALPHABET = ["a) ", "b) ", "c) ", "d) ", "e) ", "f) ",
+            "g) ", "h) ", "i) ", "j) ", "k) ", "l) ", ]
 TRUTH = "-true"
+
 
 class Question:
     def __init__(self, text: str):
@@ -30,7 +33,7 @@ def load_questions(filename: str):
                 question.rearrange_answers()
                 questions.append(question)
                 multilane = ""
-            question = Question(line.replace(number, ''))               
+            question = Question(line.replace(number, ''))
             count += 1
             number = str(count) + ". "
         else:
@@ -93,6 +96,9 @@ def quiz():
         mx = length
 
     counter = 1
+
+    start = time.time()
+
     for question in questions:
         print(str(counter) + "/" + str(mx))
         counter += 1
@@ -100,21 +106,33 @@ def quiz():
         answer = [int(x) for x in input().split()]
         answer.sort()
         if answer == truths:
-            print("DOBRZE!")
+            print("DOBRZE!\n")
             score += 1
         else:
-            print("ŻLE! Poprawne odpowiedzi to: ", truths)
             score_in_question = 0.0
-            for x in answer:
-                if x in truths:
-                    score_in_question += 1.0/len(truths)
+            s = 1.0/len(question.answers)
+            for x in range(len(question.answers)):
+                a = x+1
+                if a in answer:
+                    if a in truths:
+                        score_in_question += s
+                    else:
+                        score_in_question -= s
                 else:
-                    score_in_question -= 1.0/len(truths)
+                    if a in truths:
+                        score_in_question -= s
+                    else:
+                        score_in_question += s
             if score_in_question > 0:
                 score += score_in_question
+            print("ŻLE! Poprawne odpowiedzi to: ", truths,
+                  "Ocena: ", score_in_question, "\n")
         if counter > length:
             break
-    print("Koniec! Twój wynik to: " + str(round(score, 2)) + "/" + str(mx))
+    end = time.time()
+    print("Koniec! Twój wynik to: " + str(round(score, 2)) +
+          "/" + str(mx) + f" procentowo: {score/mx*100}%")
+    print(f"Czas trwania testu: {round((end-start)/60, 2)} minut")
 
 
 quiz()

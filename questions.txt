@@ -664,6 +664,13 @@ f) pracuje w architekturze klient-serwer -true
 g) Umozliwia rejestrowanie dostepu do zasobów  -true
 
 108. Nastepujaca regula filtracji zapory sieciowej:
+		od 1.1.1.1
+		do *.*.*.*
+		port zrodlowy 80
+		port docelowy *
+		protokol TCP
+		flagi ACK=0
+		akcja odrzuć
 a) blokuje wszelkie polaczenia nawiazywane z serwera www o dowolnym adresie
 b) blokuje wszelkie polaczenia nawiazywane z serwera www o adresie 1.1.1.1 -true
 c) blokuje wszelkie polaczenia nawiazywane z serwerem www o adresie 1.1.1.1
