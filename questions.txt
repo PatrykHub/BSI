@@ -309,12 +309,6 @@ b) jest wykorzystywany przez mechanizm informujacy o stopniu zaufania do pliku (
 c) pozwala zwiazac z dowolnym plikiem lub katalogiem dowolne (zarówno tekstowe, jak i binarne) dane -true
 d) jest wykorzystywany przez procesy w systemie Windows do informowania o bledach wykonania (tzw. metainformacje)
 
-52. Mechanizm EFS:
-a) zabezpiecza dostep do tresci poszczególnych plików zarówno w czasie dzialania systemu, jak i po jego wylaczeniu (at rest) -true
-b) stosuje kryptografie asymetryczna do szyfrowania tresci plików
-c) realizuje full disc encyption w celu zabezpieczenia systemu operacyjnego przed niepowolanym uruchomieniem i dostepem
-d) wymaga do swojego dzialania konta DRA - wg mnie nie. DRA pozwala na odzyskanie jesli stracisz dostep do swojego klucza / hasla, ale nie jest konieczny
-
 53. Jakie haslo jest domyslnie wymagane przez polecenie sudo, jezeli w konfiguracji nie bedzie ustawione inaczej (czyli jezeli wszystkie ustawienia beda mialy wartosci domyslne)?
 a) administratora systemu
 b) wlasciciela programu (SUID) uruchamianego tym poleceniem
@@ -2388,3 +2382,9 @@ c) uzytkownik "inf44444" nie moze czytac plik
 d) uzytkownik "inf44444" moze czytac plik -true
 e) grupa wlasciciela moze zmodyfikowac plik -true
 f) maska blokuje wszystkie uprawnienia
+
+378. Mechanizm EFS:
+a) zabezpiecza dostep do tresci poszczególnych plików zarówno w czasie dzialania systemu, jak i po jego wylaczeniu (at rest) -true
+b) stosuje kryptografie asymetryczna do szyfrowania tresci plików
+c) realizuje full disc encyption w celu zabezpieczenia systemu operacyjnego przed niepowolanym uruchomieniem i dostepem
+d) wymaga do swojego dzialania konta DRA - wg mnie nie. DRA pozwala na odzyskanie jesli stracisz dostep do swojego klucza / hasla, ale nie jest konieczny
