@@ -481,9 +481,9 @@ d) szyfrowanie sesji przy pomocy jednorazowego klucza
 80. Który z wymienionych protokolów pozwala w procesie uwierzytelniania calkowicie uniknac przesylania hasla podmiotu uwierzytelnianego (w jakiejkolwiek postaci):
 a) SSH  -true
 b) SSL  -true
-c) CHAP - oni zaznaczyli, wg mnie nie, screen powyzej, chap wysyla haslo zahaszowane MD5, czyli trzeba je przeslac
+c) CHAP
 d) PAP
-e) SPAP - Shiva Password Authentification Protocol, nazwa mówi sama za siebie
+e) SPAP
 
 81. Metoda programowego generowania hasel jednorazowych opracowana przez L.Lamporta polega m.in. na:
 a) wygenerowaniu losowe listy N hasel wykorzystywanych wyrywkowo przez system
@@ -2193,6 +2193,7 @@ a) Haslo, ktorym jest zaszyfrowany klucz publiczny
 b) haslo, ktorym jest zaszyfrowany klucz prywatny -true
 c) klucz, ktorym bedzie szyfrowana transmisja
 d) haslo wymagane przez zdalny host, aby zostac zalogowanym
+
 349. getfacl --omit-header acl-test1 
 user::rw- 
 user:junior:rwx 
@@ -2207,51 +2208,61 @@ c) uzytkownik "junior" moze wykonac plik -true
 d) wlasciciel moze modyfikowac plik -true
 e) grupa "student" moze wykonac plik -true
 f) inni moga zmodyfikowac plik 
+
 350. Jak zachowa sie system kontroli ACL standardu POSIX w przypadku uzytkownika U nalezacego do grupy G i wpisanego na liscie ACL obiektu p, jesli ani U ani G nie maja jawnie przydzielonego prawa r, ale kategoria "wszyscy uzytkownicy" (others) takie uprawnienie do obiektu posiada:
 a) prawo r do obiektu p zostanie efektywnie przyznane, o ile U jest wlascicielem p
 b) prawo r do obiektu p zostanie efektywnie przyznane bezwarunkowo -true
 c) prawo r do obiektu p nie zostanie efektywnie przyznane
 d) prawo r do obiektu p nie zostanie efektywnie przyznane, ale U odziedziczy je w glab, jesli p jest katalogiem
+
 351. Szyfr, w ktorym poddawana szyfrowaniu zostaje tej samej wielkosci jednobajtowa porcja nieregularnie pojawiajacych sie danych, nazywamy:
 a) strumieniowym -true
 b) symetrycznym
 c) blokowym
 d) niesymetrycznym
+
 352. SUID to:
 a) uproszczona wersji limitow
 b) bit uprawnien -true
 c) odpowiednik SGID dla katalogow
 d) rozszerzenie mechanizmu SUDO
+
 353. W jaki sposób administrator moze narzucic ograniczenia uzytkownikom (limity)?
 a) korzystajac z mechanizmu PAM -true
 b) korzystajac z mechanizmu Kerberos
 c) wykorzystujac skrypt "hosts.equiv"
 d) wykorzystujac skrypty startowe systemu
+
 354. Problem przepelnienia bufora dotyczy potencjalnie aplikacji:
 a) napisanych w jezyku C -true
 b) napisanych w jezyku Java
 c) uruchamianych w systemie z rodziny Windows -true
 d) uruchamianych w systemie z rodziny Unix/Linux -true
+
 355. Czy istnieje mozliwosc zmiany portu docelowego i adresu docelowego na adres localhost i dowolny inny port?
 a) tak -true
 b) tylko, jesli okreslimy protokol oraz oryginalny port docelowy -true
 c) tylko poprzez dodatkowy modul
 d) nie
+
 356. W jaki sposob program OpenVPN bedzie wiedzial, gdzie znajduje sie drugi koniec tunelu VPN
 a) OpenVPN w sposob interaktywny poprosi uzytkownika o podanie adresu IP i numeru portu
 b) nalezy wpisac odpowiednia opcje w pliku konfiguracyjnym -true
 c) OpenVPN wysle zapytanie do najblizszego serwera VPN
 d) OpenVPN odczytuje zawartosc zdalnej tablicy routingu i pobiera ta informacje
+
 357. Dyrektywa "mask" w ACL okresla:
 a) mozna ja modyfikowac jedynie raz
 b) jest utozsamiana z uprawnieniami grupy -true
 c) ukrywanie nadanych uprawnien dodatkowych uzytkownikow -true
 d) nie ma zadnego znaczenia
+
 358. Opcja spawn w pliku hosts.deny:
 a) pozwala tworzyc kolejne procesy TCP wrapper
 b) jest wykorzystywana tylko w pliku hosts.allow
 c) nie jest wykorzystywana -true
 d) pozwala odeslac do nadawcy specjalnie spreparowana wiadomosc w odpowiedzi na zadanie
+
 359. Ktore polecenie bedzie poprawne, dla ustalenia SNAT
 a) iptables -t nat -A FORWARD -o eth0 -j SNAT --to 150.254.17.2
 b) iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 150.254.17.2 -true
@@ -2259,22 +2270,24 @@ c) iptables -t nat -A PREROUTING -o eth0 -j SAME --to 150.254.17.2
 d) iptables -t nat -A POSTROUTING -o eth0 -j NAT --to 150.254.17.2
 e) iptables -t fnat -A PREROUTING -o eth0 -j SNAT --to 150.254.17.2
 f) iptables -t nat -A POSTROUTING -o eth0 -j SAME --to 150.254.17.2 -true
+
 360. Czy iptables umozliwia ograniczenie dostepu do uslugi w jednym poleceniu?
 a) jesli okreslamy protokol -true
 b) jesli nie okreslimy protokolu
 c) nie
 d) tak -true
+
 361. Oprogramowanie OpenVPN wykorzystuje tablice routingu w Linuxie:
 a) do sprawdzenia kosztu trasy prowadzacej do sieci po drugiej stronie polaczenia VPN
 b) aby dowiedziec sie jak nawiazac polaczenie z siecia po drugiej stronie tunelu VPN
 c) do przechowywania trasy do sieci dostepnej po drugiej stronie polaczenia VPN -true
 d) jako bufor przechowujacy nadchodzace informacje o zmianie trasy do odleglej sieci po drugiej stronie polaczenia VPN
+
 362. Nazwa konta "administrator" w systemie Ms Windows XP:
 a) mozna ja zmienic w kazdej chwili -true
 b) jest definiowana przy instalacji systemu
 c) mozna ja zmienic tylko przy wykorzystaniu dodatkowego oprogramowania
 d) jest stala i nie moze byc zmieniona
-
 
 363. Jaki uzytkownik zostanie wybrany w momencie logowania sie na zdalna maszyne przez rsh, gdy w poleceniu rsh nie podano nazwy uzytkownika?:
 a) wystapi blad podczas uwierzytelniania poniewaz nie podano nazwy uzytkownika
@@ -2284,10 +2297,12 @@ d) lokalny uzytkownik rshd
 e) zdalny uzytkownik rshd
 f) lokalny uzytkownik operator
 g) lokalny biezacy uzytkownik -true
+
 364. Do czego sluzy komenda rsh?
 a) pozwala wykonac zdalne polecenie na lokalnym hoscie
 b) pozwala wykonac polecenie na zdalnym hoscie -true
 c) pozwala nawiazac szyfrowane polaczenie ze zdalnym hostem
+
 365. user::rw- user:inf44444:r-x group::rwx group:student:rwx mask::rwx other::--- Oznacza:
 a) grupa "student" nie moze skasowac pliku
 b) uzytkownik "inf44444" moze wykonac plik -true
@@ -2295,32 +2310,36 @@ c) grupa "student" moze skasowac katalog -true
 d) wlasciciel moze wykonac plik
 e) maska blokuje wszystkie uprawnienia
 f) grupa domyslna (wlasciciela) nie moze zmodyfikowac pliku
+
 366. Czy system MS Windows korzysta z serwera Kerberos?
 a) nigdy
 b) tylko w starszych systemach (95, 98)
 c) zawsze
 d) jesli zostanie odpowiednio skonfigurowany -true
+
 367. Algorytmy SHA-256 i SHA-512 roznia sie wzajemnie:
 a) ograniczeniami eksportowymi
 b) dlugoscia kluczy
 c) wielkoscia wynikowego skrotu -true
 d) zadne z powyzszych
+
 368. Ktorym z ponizszych terminow okresla sie ograniczone srodowisko wykonawcze aplikacji lub jej komponentu:
 a) komnata (room)
 b) komora (chamber)
 c) karcer (jailbox)
 d) piaskownica (sandbox) -true
+
 369. Kontrola dostepu do zasobow jest zwiazana z zachowaniem wlasnosci:
 a) poufnosci i integralnosci -true
 b) tylko poufnosci
 c) tylko integralnosci
 d) zadnej z powyzszych
+
 370. Czy RSBAC to:
 a) poprawnie skonfigurowana polityka bezpieczenstwa
 b) domyslne uprawnienia systemowe
 c) zestaw rozszerzajacy kontrole uprawnien -true
 d) zestaw lat na jadro systemu Linux -true
-
 
 371. Pre-shared key to
 a) przestarzaly mechanizm sluzacy do logowania sie na zdalnego hosta bez podawania hasla
@@ -2329,34 +2348,38 @@ c) prosty mechanizm pozwalajacy szyfrowac i uwierzytelniac strony za pomoca jedn
 d) silny mechanizm uwierzytelniania wykorzystujacy generowany losowo po obu stronach klucz
 e) silny mechanizm szyfrowania wykorzystujacy certyfikaty SSL do generacji losowego klucza sesyjnego
 f) jest to przyklad kryptografii symetrycznej -true
+
 372. Co to jest challenge-response?
 a) mechanizm pozwalajacy uwierzytelniac sie bez potrzeby przesylania tajnego klucza -true
 b) przestarzala forma uwierzytelniania stosowana w ssh
 c) nie istnieje cos takiego
 d) mechanizm wykorzystywany w kryptografii dyskretnej
 e) silny mechanizm szyfrowania wykorzystujacy kryptografie klucza publicznego
+
 373. Czy serwer KDC w systemie Kerberos przechowuje konta uzytkowników?
 a) tak
 b) tylko lokalne konta
 c) nie -true
 d) tylko konta administratorow
+
 374. W jaki sposob polaczenie nawiazane przez rsh jest zabezpieczone?
 a) kodowana komunikacja przy uzyciu funkcji XOR
 b) szyfrowana komunikacja po podaniu hasla i loginu
 c) komunikacja uwierzytelniana w kryptograficznie bezpieczny sposob
 d) komunikacja nie jest chroniona -true
+
 375. W RSBAC, czy mozna zmienic uprawnienia do katalogu dla programu podczas jego dzialania?
 a) jesli program posiada taka mozliwosc (programista uwzglednil taka opcje) -true
 b) nie jest to okreslone
 c) istnieja takie mozliwosci
 d) nie
+
 376. Czy TCP wrapper to 
 a) samodzielny program analizujacy tylko polaczenia tcp -true
 b) lata (ang. patch) rozszerzajaca funkcjonalnosc programu xinetd
 c) program analizujacy tylko przychodzace polaczenia tcp, ale dla numerow portow na ktorych uruchomione sa uslugi zarzadzane przez xinetd
 d) program w postaci prostego firewalla za pomoca ktorego mozna blokowac wychodzace polaczenia, odpowiednie reguly zapisywane sa w plikach /etc/hosts.allow i /etc/hosts.deny
 e) dodatkowy podsystem sieciowy dla systemu operacyjnego Linux pozwalajacy na nakladanie ograniczen dla polaczen przychodzacych
-
 
 377. user::r-x user:inf44444:r-- group::rw- group:student:r-x mask::rwx other::--x Oznacza
 a) wszyscy moga wykonac plik
